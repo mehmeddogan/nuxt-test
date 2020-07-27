@@ -1,6 +1,10 @@
 <template>
   <section class="section">
     <div class="columns is-mobile">
+      <message
+        message="İkinci el al ve sat
+Kullanmadığın şeyleri sat ve harika fırsatlar bul."
+      />
       <card
         title="Free"
         icon="github"
@@ -41,12 +45,14 @@
 </template>
 
 <script>
+import Message from '../components/Message'
 import Card from '~/components/Card'
 
 export default {
   name: 'HomePage',
 
   components: {
+    Message,
     Card
   }
 }
